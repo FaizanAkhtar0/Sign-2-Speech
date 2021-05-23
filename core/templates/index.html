@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+    {% csrf_token %}
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                          <div class="mt-5">
+                            <h1 class="display-3 pt-5 custom-lead-text-color">Welcome to<br>Sign 2 Speech</h1>
+                            <p class="lead pb-3 mb-2 custom-lead-text-color">Where we communicate with ease.</p>
+                            <a href="/cam" type="button" class="btn btn-lg btn-primary mb-5 custom-lead-button" style="border-radius: 50%;">Camera <span>&#8594;</span></a><br>
+                            <img class="responsive-triangles img-fluid" src="{% static 'img/Asset 2.png' %}">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="container">
+                        <img class="mt-5 responsive-girl img-fluid" src="{% static 'img/Asset 1.png' %}">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="{% static 'bs5/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'bs5/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/particles.js' %}"></script>
+        <script src="{% static 'js/base_effect.js' %}">
+        </script>
+{% endblock %}

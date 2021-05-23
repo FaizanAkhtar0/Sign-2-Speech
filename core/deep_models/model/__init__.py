@@ -1,0 +1,1 @@
+from core.deep_models.model.keypoint_classifier.keypoint_classifier import KeyPointClassifier

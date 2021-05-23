@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="theme-color" content="#00ced1">
+        <title>S2S - Welcome</title>
+        <link rel="icon" href="{% static 'img/favicon.png' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'bs5/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'bs5/css/bootstrap-grid.min.css' %}">
+        <link rel="stylesheet" href="{% static 'bs5/css/bootstrap-reboot.min.css' %}">
+        <link rel="manifest" href="{% static 'manifest.json'%}">
+        <link rel="apple-touch-icon" href="{% static 'img/favicon.png' %}">
+    </head>
+    <body>
+{% block content %}
+
+			{% endblock %}
+            <script src="{% static 'js/index.js' %}"></script>
+    </body>
+</html>
